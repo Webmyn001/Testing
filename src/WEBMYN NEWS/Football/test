@@ -1,0 +1,37 @@
+   
+
+   useEffect( ()=> {
+    axios.get("https://newsapi.org/v2/top-headlines?country=gb&category=sports&apiKey=035dfc2e91174f05b60a5538de700185").
+    then(res => {
+      console.log(res)
+    }).catch(err => {
+      console.log(err)
+    })
+},[])
+
+
+          useEffect (() => {
+    window.addEventListener("scroll", ()=> { 
+        if (window.scrollY > 100) {
+            handleShow(true);
+        } else handleShow(false);
+    });
+    return () => {
+         window.removeEventListener("scroll");
+    };
+    },[]);
+
+    
+{isLargeRow?  movie.poster_path : movie.backdrop_path  }
+
+
+     <Link to= {{pathname:`/eplnews/${info.id}`, state:"hello world",}}>
+
+
+ https://newsdata.io/api/1/news?apikey=pub_1019792a45786f3efcd5e3b091fdedb601397 =1
+                                         pub_10279def0d4c8db51100c60ae4fe5f357aee0 =2
+                                      pub_10285af28aa22d771c84d12cf1b1d6d78383f =3
+                                      pub_102837d1b78d2917ef58d60ac1f4e2b93c323 =4
+                                      pub_10281a75a5008eedf1c2ba33e6b3f0706d78b =5
+                                
+ 
