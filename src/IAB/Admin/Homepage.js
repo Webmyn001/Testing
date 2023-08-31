@@ -94,7 +94,7 @@ function Homepage1() {
 
 
   return (
-    <div className='min-h-[900px] '>
+    <div className='min-h-[900px] text-[#10112e]'>
     <h1 className='text-center font-semibold font-montserat bg-gradient-to-r text-white from-[#1a456e]  to-[#a4cb3c] mt-2 py-[2px]'>Islamic Affairs Board (mssnoau)</h1>
     <h1 className='text-center font-bold text-xl font-josefins pt-4 '>Admin Page</h1>
 
@@ -117,7 +117,7 @@ function Homepage1() {
       className='w-full border-b-[1px] shadow-md h-[70px] rounded-md focus:outline-0 text-[14px] pb-[3.5px] pl-3 border-[#1a456e] text-[#1a456e] mt-[24px]'/>
 
 
-    <h3 className='text-xs pt-5 text-indigo-800 text-center'>kindly upload document only below (Max 5mb)</h3>
+    <h3 className='text-xs pt-5 text-[#1a456e] text-center'>kindly upload document only below (Max 5mb)</h3>
    <input  type="file"  name='document' onChange={Onchangeimages}
       className='w-full border-b-[1px] shadow-md focus:outline-0 text-[14px] rounded-md pb-[3.5px] pl-3  border-[#1a456e]  mt-[12px]' />
 

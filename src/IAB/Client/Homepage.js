@@ -16,13 +16,13 @@ function Homepage(props) {
   
        <div className='min-h-screen flex flex-col gap-2 justify-center items-center'>
         
-       <div className='flex text-[#a4cb3c] flex-col justify-start w-full p-4 sm:justify-center sm:items-center'>
+       <div className='flex flex-col justify-start w-full p-4 sm:justify-center sm:items-center'>
           <h3>Date posted : 28/08/2023 </h3>
           <h3>Time posted : 4:17pm</h3>
         </div>
       
 
-                <img src={props.list[0].image} alt={props.list[0].title} className="rounded-xl shadow-2xl  w-[320px] h-[400px] sm:w-[400px] sm:h-[400px] object-cover" data-aos="zoom-in"/>
+                <img src={props.list[0].image} alt={props.list[0].title} className="rounded-xl shadow-2xl  w-[320px] h-[400px] sm:w-[400px] sm:h-[450px] object-cover" data-aos="zoom-in"/>
 
                 <h1 className='p-3 font-bold pt-9'>{props.list[0].Title}</h1>
                 <h1 className='p-3 font-medium'>{props.list[0].Content1}</h1>
