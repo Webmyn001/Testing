@@ -14,7 +14,7 @@ function App() {
   const [Lecture, setLecture] =useState([])
      
   const getLecture = async  () => {
-     axios.get("https://defiant-lime-tweed-jacket.cyclic.app/api/crp305/")
+     axios.get("https://red-muddy-gecko.cyclic.app/api/mssnoau/iab/")
      .then(res => {
        console.log(res.data)
        setLecture(res.data)

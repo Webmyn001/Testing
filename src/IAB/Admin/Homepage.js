@@ -89,7 +89,6 @@ function Homepage1() {
             
           })
           setDate(f.format(today))
-          console.log(date)
        }, [saveForm])
 
 
