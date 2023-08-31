@@ -94,7 +94,7 @@ function Homepage1() {
 
 
   return (
-    <div className='min-h-[900px] text-[#10112e]'>
+    <div className='min-h-[900px] text-[#1a456e]'>
     <h1 className='text-center font-semibold font-montserat bg-gradient-to-r text-white from-[#1a456e]  to-[#a4cb3c] mt-2 py-[2px]'>Islamic Affairs Board (mssnoau)</h1>
     <h1 className='text-center font-bold text-xl font-josefins pt-4 '>Admin Page</h1>
 
