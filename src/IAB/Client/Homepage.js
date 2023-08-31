@@ -21,7 +21,7 @@ function Homepage(props) {
         </div>
       
 
-                <img src={props.list[0].image} alt={props.Lecture[0].Title} className="rounded-xl shadow-2xl  w-[320px] h-[400px] sm:w-[400px] sm:h-[450px] object-cover" data-aos="zoom-in"/>
+                <img src={props.list[0].Image[0].url} alt={props.Lecture[0].Title} className="rounded-xl shadow-2xl  w-[320px] h-[400px] sm:w-[400px] sm:h-[450px] object-cover" data-aos="zoom-in"/>
 
                 <h1 className='p-3 font-bold pt-9'>{props.Lecture[0].Title}</h1>
                 <h1 className='p-3 font-medium'>{props.Lecture[0].Content1}</h1>
