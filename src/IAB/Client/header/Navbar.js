@@ -22,9 +22,9 @@ import {FaBars,FaTimes} from "react-icons/fa"
             {/* logo */}
             <div>
             <Link to="/"> 
-              <div className="pl-4 flex pt-2">
+              <div className="pl-2 flex pt-2 items-center justify-start">
               <img src={image1} alt="logo" className="h-[50px] w-[50px] p-1  cursor-pointer rounded-lg"/>
-              <img src={image2} alt="logo" className="h-[50px] w-[50px] p-1  cursor-pointer rounded-lg"/>
+              <img src={image2} alt="logo" className="h-[50px] w-[50px]  p-1  cursor-pointer rounded-lg"/>
 
                 </div>   
                </Link> 
