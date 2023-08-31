@@ -53,12 +53,12 @@ const [loading, setloading] =useState(false)
 
           <div className='min-h-screen flex flex-col  gap-2 justify-center items-center' key={i}>
          <div className='flex flex-col justify-start w-full p-4 sm:justify-center sm:items-center'>
-          <h3 className='text-[15px] sm:text-base '>Uploaded :{info.date}</h3>
+          <h3 className='text-[15px] sm:text-base '>Uploaded : {info.date}</h3>
         </div>
 
-                <img src={info.Image[0].url} alt={info.Title} className="rounded-xl shadow-2xl  w-[320px] h-[400px] sm:w-[400px] sm:h-[450px] object-cover" data-aos="zoom-in"/>
+                <img src={info.Image[0].url} alt={info.Title} className="rounded-xl shadow-2xl  w-[350px] h-[410px] sm:w-[400px] sm:h-[450px] object-cover" data-aos="zoom-in"/>
 
-                <h1 className='p-3 font-bold pt-9'>{info.Title}</h1>
+                <h1 className='p-3 text-xl  font-bold pt-10'>{info.Title}</h1>
                 <h1 className='p-3 font-medium'>{info.Content1}</h1>
                 <h1 className='p-3 font-meduim'>{info.Content2}</h1>
                 <h1 className='p-3 font-meduim'>{info.Conclusion}</h1>
