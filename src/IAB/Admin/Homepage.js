@@ -20,7 +20,7 @@ function Homepage1() {
         setLoading(true)
       e.preventDefault();
        
-       axios.post("https://defiant-lime-tweed-jacket.cyclic.app/api/cpt503/add", {Title,date,Content1,Content2,Conclusion,Image})
+       axios.post("https://red-muddy-gecko.cyclic.app/api/mssnoau/iab/add", {Title,date,Content1,Content2,Conclusion,Image})
       .then((res)=>
       { 
       console.log("saved succesfully")

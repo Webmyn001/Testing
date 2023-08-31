@@ -14,7 +14,7 @@ function App() {
      const [Lecture, setLecture] =useState([])
      
      const getLecture = async  () => {
-        axios.get("https://defiant-lime-tweed-jacket.cyclic.app/api/crp305/")
+        axios.get("https://red-muddy-gecko.cyclic.app/api/mssnoau/iab/")
         .then(res => {
           console.log(res.data)
           setLecture(res.data)
@@ -55,7 +55,7 @@ function App() {
          <Routes>
 
            {/* Client */}
-               <Route path = "/" exact element= {<Homepage list={list}/>}></Route>
+               <Route path = "/" exact element= {<Homepage Lecture={Lecture}/>}></Route>
                <Route path = "/contact" exact element= {<Contact/>}></Route>
 
 
