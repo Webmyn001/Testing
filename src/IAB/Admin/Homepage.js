@@ -13,14 +13,14 @@ function Homepage1() {
      const [Content2, setContent2] = useState("")
      const [Conclusion, setConclusion] = useState("")
      const [Image, setImage] = useState("")
-
+     const [date, setDate] = useState("")
      const [Loading , setLoading] = useState(false)
 
      const saveForm = async (e) => {
         setLoading(true)
       e.preventDefault();
        
-       axios.post("https://defiant-lime-tweed-jacket.cyclic.app/api/cpt503/add", {Title,Content1,Content2,Conclusion,Image})
+       axios.post("https://defiant-lime-tweed-jacket.cyclic.app/api/cpt503/add", {Title,date,Content1,Content2,Conclusion,Image})
       .then((res)=>
       { 
       console.log("saved succesfully")
@@ -80,6 +80,19 @@ function Homepage1() {
       }
 
 
+
+      useEffect(()=> {
+        const today = new Date()
+          const f = new Intl.DateTimeFormat("en-us", {
+            dateStyle:"full",
+            timeStyle: "short"
+            
+          })
+          setDate(f.format(today))
+          console.log(date)
+       }, [saveForm])
+
+
   return (
     <div className='min-h-[900px] '>
     <h1 className='text-center font-semibold font-montserat bg-gradient-to-r text-white from-[#1a456e]  to-[#a4cb3c] mt-2 py-[2px]'>Islamic Affairs Board (mssnoau)</h1>
@@ -106,7 +119,7 @@ function Homepage1() {
 
     <h3 className='text-xs pt-5 text-indigo-800 text-center'>kindly upload document only below (Max 5mb)</h3>
    <input  type="file"  name='document' onChange={Onchangeimages}
-      className='w-full border-b-[1px] shadow-md focus:outline-0 text-[14px] rounded-md pb-[3.5px] pl-3  border-[#1a456e]  mt-[12px]' required/>
+      className='w-full border-b-[1px] shadow-md focus:outline-0 text-[14px] rounded-md pb-[3.5px] pl-3  border-[#1a456e]  mt-[12px]' />
 
 
      {/* Upload button */}
